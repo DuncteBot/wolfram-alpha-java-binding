@@ -34,6 +34,17 @@ dependencies {
 
 }
 
+publishing {
+    publications {
+        MavenProject(MavenPublication) {
+            from components.java
+            groupId group
+            artifactId archivesBaseName
+            version = version
+        }
+    }
+}
+
 build {
     dependsOn clean
     dependsOn jar
