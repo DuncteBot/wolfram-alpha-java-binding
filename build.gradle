@@ -11,8 +11,8 @@ plugins {
     id 'maven-publish'
 }
 
-group = "com.wolfaram"
-archivesBaseName = "alpha"
+group = "com.wolfaram.alpha"
+archivesBaseName = "WolfaramAlpha"
 version = "1.1"
 
 sourceCompatibility = 1.8
@@ -32,4 +32,11 @@ dependencies {
     // https://mvnrepository.com/artifact/commons-logging/commons-logging
     compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
 
+}
+
+build {
+    dependsOn clean
+    dependsOn jar
+
+    jar.mustRunAfter clean
 }
