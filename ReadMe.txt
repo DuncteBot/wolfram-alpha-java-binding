@@ -30,3 +30,29 @@ I used.
 
 
 Look at the simple sample program included to get started.
+
+Add this to your pom.xml to use it with maven:
+
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+<dependency>
+    <groupId>com.github.aeurielesn</groupId>
+    <artifactId>wolfram-alpha-java-binding</artifactId>
+    <version>master-SNAPSHOT</version>
+</dependency>
+
+Add this to your build.gradle to use it with gradle:
+
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencies {
+        implementation 'com.github.aeurielesn:wolfram-alpha-java-binding:master-SNAPSHOT'
+}

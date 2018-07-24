@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/wolfram-alpha-java-binding.iml" filepath="$PROJECT_DIR$/wolfram-alpha-java-binding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wolfram-alpha-java-binding_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wolfram-alpha-java-binding_main.iml" group="wolfram-alpha-java-binding" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wolfram-alpha-java-binding_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wolfram-alpha-java-binding_test.iml" group="wolfram-alpha-java-binding" />
     </modules>
   </component>
 </project>
